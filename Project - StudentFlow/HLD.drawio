@@ -1,0 +1,280 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/29.2.9 Chrome/140.0.7339.249 Electron/38.7.2 Safari/537.36" version="29.2.9">
+  <diagram name="Page-1" id="studyflow-hld">
+    <mxGraphModel dx="910" dy="610" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" background="#000000" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="users_box" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#ffffff;arcSize=10;" value="" vertex="1">
+          <mxGeometry height="230" width="85" x="15" y="200" as="geometry" />
+        </mxCell>
+        <mxCell id="users_label" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#ffffff;fontStyle=1;" value="USERS" vertex="1">
+          <mxGeometry height="20" width="60" x="27.5" y="210" as="geometry" />
+        </mxCell>
+        <mxCell id="users_clients" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#ffffff;fontSize=11;" value="Web / Mobile&#xa;Clients" vertex="1">
+          <mxGeometry height="40" width="80" x="17.5" y="380" as="geometry" />
+        </mxCell>
+        <mxCell id="frontend_box" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#4CAF50;strokeWidth=2;arcSize=5;" value="" vertex="1">
+          <mxGeometry height="330" width="145" x="115" y="150" as="geometry" />
+        </mxCell>
+        <mxCell id="frontend_label" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#4CAF50;fontStyle=1;" value="FRONTEND" vertex="1">
+          <mxGeometry height="20" width="80" x="147.5" y="160" as="geometry" />
+        </mxCell>
+        <mxCell id="frontend_tech" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#ffffff;fontSize=12;fontStyle=1;" value="React + Vite&#xa;(Web App)" vertex="1">
+          <mxGeometry height="40" width="100" x="137.5" y="240" as="geometry" />
+        </mxCell>
+        <mxCell id="features_box" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=none;dashed=1;fontColor=#ffffff;fontSize=10;align=left;spacingLeft=5;" value="Features&#xa;• Authentication&#xa;  (Login / Register)&#xa;• Dashboard (Stats)&#xa;• Kanban Board (Tasks)&#xa;• Create / Edit / Delete Tasks&#xa;• Settings (Dark Mode)&#xa;• Toast Notifications" vertex="1">
+          <mxGeometry height="170" width="125" x="125" y="300" as="geometry" />
+        </mxCell>
+        <mxCell id="7iR1sR7JQRNpvm5EplKq-27" edge="1" parent="1" source="gateway_box" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" target="auth_info_box">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="360" y="560" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="gateway_box" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#1976D2;strokeWidth=2;arcSize=5;" value="" vertex="1">
+          <mxGeometry height="300" width="100" x="310" y="200" as="geometry" />
+        </mxCell>
+        <mxCell id="gateway_label" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#1976D2;fontStyle=1;fontSize=10;" value="API GATEWAY&#xa;&amp;&#xa;LOAD BALANCER" vertex="1">
+          <mxGeometry height="50" width="90" x="315" y="210" as="geometry" />
+        </mxCell>
+        <mxCell id="gateway_icon" parent="1" style="shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.application_load_balancer;fillColor=#1976D2;strokeColor=none;fontColor=#ffffff;" value="" vertex="1">
+          <mxGeometry height="40" width="40" x="340" y="290" as="geometry" />
+        </mxCell>
+        <mxCell id="7iR1sR7JQRNpvm5EplKq-8" edge="1" parent="1" source="gateway_list" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="auth_svc">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="gateway_list" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#ffffff;fontSize=10;" value="• Authentication (JWT)&lt;br&gt;• Authorization&lt;br&gt;• Routing&lt;br&gt;• CORS Handling" vertex="1">
+          <mxGeometry height="100" width="95" x="315" y="380" as="geometry" />
+        </mxCell>
+        <mxCell id="auth_ctrl" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#FFD700;fontColor=#ffffff;fontSize=10;align=left;spacingLeft=5;" value="AUTH CONTROLLER&#xa;(/api/auth/*)&#xa;• register&#xa;• login" vertex="1">
+          <mxGeometry height="120" width="110" x="440" y="200" as="geometry" />
+        </mxCell>
+        <mxCell id="task_ctrl" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#FFD700;fontColor=#ffffff;fontSize=10;align=left;spacingLeft=5;" value="TASK CONTROLLER&#xa;(/api/tasks/*)&#xa;• CRUD Operations&#xa;• Filter by Status&#xa;• Filter by User&#xa;• Validate Future Deadline" vertex="1">
+          <mxGeometry height="120" width="120" x="560" y="200" as="geometry" />
+        </mxCell>
+        <mxCell id="dash_ctrl" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#FFD700;fontColor=#ffffff;fontSize=10;align=left;spacingLeft=5;" value="DASHBOARD CONTROLLER&#xa;(/api/dashboard/stats)&#xa;• Get Dashboard Stats" vertex="1">
+          <mxGeometry height="120" width="110" x="690" y="200" as="geometry" />
+        </mxCell>
+        <mxCell id="auth_svc" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#FFD700;fontColor=#ffffff;fontSize=10;align=left;spacingLeft=5;" value="AUTH SERVICE&#xa;• User Registration&#xa;• User Login&#xa;• JWT Token Generation" vertex="1">
+          <mxGeometry height="120" width="110" x="440" y="370" as="geometry" />
+        </mxCell>
+        <mxCell id="task_svc" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#FFD700;fontColor=#ffffff;fontSize=10;align=left;spacingLeft=5;" value="TASK SERVICE&#xa;• Create / Update / Delete Task&#xa;• Get Tasks&#xa;• Deadline Validation&#xa;• Caching with Redis" vertex="1">
+          <mxGeometry height="120" width="120" x="560" y="370" as="geometry" />
+        </mxCell>
+        <mxCell id="dash_svc" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#FFD700;fontColor=#ffffff;fontSize=10;align=left;spacingLeft=5;" value="DASHBOARD SERVICE&#xa;• Calculate Stats&#xa;• Caching with Redis" vertex="1">
+          <mxGeometry height="120" width="110" x="690" y="370" as="geometry" />
+        </mxCell>
+        <mxCell id="user_repo" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#4B0082;strokeColor=#9370DB;fontColor=#ffffff;fontSize=9;" value="USER REPOSITORY&#xa;(Spring Data MongoDB)" vertex="1">
+          <mxGeometry height="60" width="100" x="440" y="520" as="geometry" />
+        </mxCell>
+        <mxCell id="task_repo" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#4B0082;strokeColor=#9370DB;fontColor=#ffffff;fontSize=9;" value="TASK REPOSITORY&#xa;(Spring Data MongoDB)" vertex="1">
+          <mxGeometry height="60" width="100" x="570" y="520" as="geometry" />
+        </mxCell>
+        <mxCell id="7iR1sR7JQRNpvm5EplKq-10" edge="1" parent="1" source="redis_svc" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="mongo_replica_box">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="745" y="600" />
+              <mxPoint x="710" y="600" />
+            </Array>
+            <mxPoint x="745.0384615384615" y="600" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="redis_svc" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#4B0082;strokeColor=#9370DB;fontColor=#ffffff;fontSize=9;" value="REDIS SERVICE&#xa;(Spring Data Redis)" vertex="1">
+          <mxGeometry height="60" width="100" x="695" y="520" as="geometry" />
+        </mxCell>
+        <mxCell id="user_db_box" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#9370DB;strokeWidth=2;" value="" vertex="1">
+          <mxGeometry height="100" width="230" x="500" y="10" as="geometry" />
+        </mxCell>
+        <mxCell id="mongo_icon_top" parent="1" style="shape=image;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;verticalAlign=top;aspect=fixed;imageAspect=0;image=https://www.mongodb.com/assets/images/global/leaf.png;" value="" vertex="1">
+          <mxGeometry height="40" width="40" x="515" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="user_db_label" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#ffffff;fontStyle=1;" value="USER DB&#xa;(MongoDB)" vertex="1">
+          <mxGeometry height="40" width="80" x="560" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="user_db_list" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#ffffff;fontSize=10;" value="• User Details&#xa;• Credentials&#xa;• Profiles" vertex="1">
+          <mxGeometry height="60" width="80" x="650" y="25" as="geometry" />
+        </mxCell>
+        <mxCell id="redis_box" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#B22222;strokeWidth=2;" value="" vertex="1">
+          <mxGeometry height="270" width="130" x="900" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="redis_label" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#B22222;fontStyle=1;" value="REDIS CACHE&#xa;(Redis)" vertex="1">
+          <mxGeometry height="40" width="100" x="915" y="150" as="geometry" />
+        </mxCell>
+        <mxCell id="redis_used_box" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=none;dashed=1;fontColor=#ffffff;fontSize=9;align=left;spacingLeft=5;" value="&lt;font style=&quot;color: rgb(255, 255, 255);&quot;&gt;Used For&lt;br&gt;• Session / Token Data&lt;br&gt;• Task List Caching&lt;br&gt;• Dashboard Stats Caching&lt;br&gt;• Frequently Accessed Data&lt;/font&gt;" vertex="1">
+          <mxGeometry height="140" width="110" x="910" y="260" as="geometry" />
+        </mxCell>
+        <mxCell id="auth_info_box" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#1976D2;strokeWidth=2;" value="" vertex="1">
+          <mxGeometry height="150" width="180" x="80" y="580" as="geometry" />
+        </mxCell>
+        <mxCell id="auth_info_label" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#1976D2;fontStyle=1;" value="AUTHENTICATION" vertex="1">
+          <mxGeometry height="20" width="120" x="120" y="590" as="geometry" />
+        </mxCell>
+        <mxCell id="auth_info_list" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#ffffff;fontSize=9;" value="JWT Based Authentication&#xa;• Login → JWT Token&#xa;• Token sent in Authorization Header&#xa;• JwtFilter validates each request&#xa;• Secured APIs" vertex="1">
+          <mxGeometry height="100" width="130" x="125" y="620" as="geometry" />
+        </mxCell>
+        <mxCell id="mongo_primary_box" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#4CAF50;strokeWidth=2;" value="" vertex="1">
+          <mxGeometry height="170" width="150" x="440" y="620" as="geometry" />
+        </mxCell>
+        <mxCell id="mongo_primary_label" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#4CAF50;fontStyle=1;fontSize=11;" value="MONGODB&#xa;(Primary)" vertex="1">
+          <mxGeometry height="30" width="80" x="475" y="630" as="geometry" />
+        </mxCell>
+        <mxCell id="mongo_icon_main" parent="1" style="shape=image;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;verticalAlign=top;aspect=fixed;imageAspect=0;image=https://www.mongodb.com/assets/images/global/leaf.png;" value="" vertex="1">
+          <mxGeometry height="40" width="40" x="450" y="660" as="geometry" />
+        </mxCell>
+        <mxCell id="mongo_primary_list" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#ffffff;fontSize=9;" value="Collections&#xa;• users&#xa;• tasks&#xa;• attachments&#xa;• other application data" vertex="1">
+          <mxGeometry height="100" width="90" x="495" y="680" as="geometry" />
+        </mxCell>
+        <mxCell id="mongo_replica_box" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#4CAF50;strokeWidth=2;" value="" vertex="1">
+          <mxGeometry height="150" width="120" x="650" y="640" as="geometry" />
+        </mxCell>
+        <mxCell id="mongo_replica_label" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#4CAF50;fontStyle=1;fontSize=10;" value="MONGODB REPLICA&#xa;(Read Replica)" vertex="1">
+          <mxGeometry height="30" width="100" x="650" y="650" as="geometry" />
+        </mxCell>
+        <mxCell id="mongo_icon_replica" parent="1" style="shape=image;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;verticalAlign=top;aspect=fixed;imageAspect=0;image=https://www.mongodb.com/assets/images/global/leaf.png;" value="" vertex="1">
+          <mxGeometry height="30" width="30" x="650" y="685" as="geometry" />
+        </mxCell>
+        <mxCell id="mongo_replica_list" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#ffffff;fontSize=9;" value="Read Only Access&#xa;• For Read Scaling&#xa;• Reporting / Analytics" vertex="1">
+          <mxGeometry height="80" width="70" x="685" y="700" as="geometry" />
+        </mxCell>
+        <mxCell id="infra_box" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#1976D2;strokeWidth=2;" value="" vertex="1">
+          <mxGeometry height="160" width="150" x="805" y="620" as="geometry" />
+        </mxCell>
+        <mxCell id="infra_label" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#1976D2;fontStyle=1;fontSize=11;" value="INFRASTRUCTURE&#xa;(Docker Compose)" vertex="1">
+          <mxGeometry height="30" width="110" x="825" y="590" as="geometry" />
+        </mxCell>
+        <mxCell id="spring_icon_infra" parent="1" style="shape=image;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;verticalAlign=top;aspect=fixed;imageAspect=0;image=https://upload.wikimedia.org/wikipedia/commons/4/44/Spring_Framework_Logo_2018.svg;" value="" vertex="1">
+          <mxGeometry height="35" width="35" x="820" y="660" as="geometry" />
+        </mxCell>
+        <mxCell id="mongo_icon_infra" parent="1" style="shape=image;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;verticalAlign=top;aspect=fixed;imageAspect=0;image=https://www.mongodb.com/assets/images/global/leaf.png;" value="" vertex="1">
+          <mxGeometry height="20" width="20" x="870" y="677.4" as="geometry" />
+        </mxCell>
+        <mxCell id="infra_text" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#ffffff;fontSize=8;rotation=0;" value="Spring Boot&#xa;App" vertex="1">
+          <mxGeometry height="20" width="40" x="815" y="710" as="geometry" />
+        </mxCell>
+        <mxCell id="infra_text2" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#ffffff;fontSize=8;" value="MongoDB" vertex="1">
+          <mxGeometry height="20" width="40" x="860" y="710" as="geometry" />
+        </mxCell>
+        <mxCell id="infra_text3" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#ffffff;fontSize=8;" value="Redis" vertex="1">
+          <mxGeometry height="20" width="40" x="900" y="710" as="geometry" />
+        </mxCell>
+        <mxCell id="conn1" edge="1" parent="1" source="users_box" style="endArrow=classic;html=1;strokeColor=#ffffff;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="frontend_box" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry" />
+        </mxCell>
+        <mxCell id="conn3" edge="1" parent="1" source="gateway_box" style="endArrow=classic;html=1;strokeColor=#ffffff;exitX=1;exitY=0.2;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="auth_ctrl" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <Array as="points">
+              <mxPoint x="420" y="260" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="conn6" edge="1" parent="1" source="auth_ctrl" style="endArrow=classic;html=1;strokeColor=#ffffff;dashed=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="auth_svc" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry" />
+        </mxCell>
+        <mxCell id="conn7" edge="1" parent="1" source="task_ctrl" style="endArrow=classic;html=1;strokeColor=#ffffff;dashed=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="task_svc" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry" />
+        </mxCell>
+        <mxCell id="conn8" edge="1" parent="1" source="dash_ctrl" style="endArrow=classic;html=1;strokeColor=#ffffff;dashed=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="dash_svc" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry" />
+        </mxCell>
+        <mxCell id="conn9" edge="1" parent="1" source="auth_svc" style="endArrow=classic;html=1;strokeColor=#ffffff;dashed=1;exitX=0.456;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitPerimeter=0;" target="user_repo" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry" />
+        </mxCell>
+        <mxCell id="conn10" edge="1" parent="1" source="task_svc" style="endArrow=classic;html=1;strokeColor=#ffffff;dashed=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="task_repo" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry" />
+        </mxCell>
+        <mxCell id="conn11" edge="1" parent="1" source="dash_svc" style="endArrow=classic;html=1;strokeColor=#ffffff;dashed=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="redis_svc" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry" />
+        </mxCell>
+        <mxCell id="conn12" edge="1" parent="1" source="task_ctrl" style="endArrow=classic;startArrow=classic;html=1;strokeColor=#ffffff;exitX=0.458;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;fontSize=9;exitPerimeter=0;" target="user_db_box" value="Read / Write">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="620" y="140" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="conn13" edge="1" parent="1" style="endArrow=classic;startArrow=classic;html=1;strokeColor=#ffffff;exitX=1;exitY=0.3;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontSize=9;" target="redis_box" value="Read / Write&#xa;(Cache)">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="810" y="275" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="conn14" edge="1" parent="1" source="user_repo" style="endArrow=classic;html=1;strokeColor=#ffffff;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="490" y="620" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="conn15" edge="1" parent="1" source="task_repo" style="endArrow=classic;html=1;strokeColor=#ffffff;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="mongo_primary_box" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <Array as="points">
+              <mxPoint x="620" y="600" />
+              <mxPoint x="515" y="600" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="conn17" edge="1" parent="1" source="mongo_primary_box" style="endArrow=classic;html=1;strokeColor=#ffffff;dashed=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.75;entryDx=0;entryDy=0;fontSize=9;" target="mongo_icon_replica" value="Replication">
+          <mxGeometry height="50" relative="1" width="50" as="geometry" />
+        </mxCell>
+        <mxCell id="conn20" edge="1" parent="1" source="redis_box" style="endArrow=classic;html=1;strokeColor=#ffffff;dashed=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" target="infra_box" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <Array as="points">
+              <mxPoint x="1080" y="275" />
+              <mxPoint x="1080" y="500" />
+              <mxPoint x="1080" y="700" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="conn21" edge="1" parent="1" source="mongo_replica_box" style="endArrow=classic;html=1;strokeColor=#ffffff;dashed=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" target="infra_box" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <Array as="points">
+              <mxPoint x="710" y="800" />
+              <mxPoint x="880" y="800" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="7iR1sR7JQRNpvm5EplKq-2" parent="1" style="image;sketch=0;aspect=fixed;html=1;points=[];align=center;fontSize=12;image=img/lib/mscae/Cache_Redis_Product.svg;" value="" vertex="1">
+          <mxGeometry height="42" width="50" x="940" y="200" as="geometry" />
+        </mxCell>
+        <mxCell id="7iR1sR7JQRNpvm5EplKq-3" parent="1" style="image;sketch=0;aspect=fixed;html=1;points=[];align=center;fontSize=12;image=img/lib/mscae/Cache_Redis_Product.svg;" value="" vertex="1">
+          <mxGeometry height="25.2" width="30" x="905" y="674.8000000000001" as="geometry" />
+        </mxCell>
+        <mxCell id="7iR1sR7JQRNpvm5EplKq-14" parent="1" style="sketch=0;outlineConnect=0;fontColor=#232F3E;gradientColor=none;fillColor=#FBFBFF;strokeColor=none;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;pointerEvents=1;shape=mxgraph.aws4.user;" value="" vertex="1">
+          <mxGeometry height="43.5" width="43.5" x="35.75" y="336.5" as="geometry" />
+        </mxCell>
+        <mxCell id="7iR1sR7JQRNpvm5EplKq-15" parent="1" style="sketch=0;outlineConnect=0;fontColor=#232F3E;gradientColor=none;fillColor=#FBFBFF;strokeColor=none;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;pointerEvents=1;shape=mxgraph.aws4.user;" value="" vertex="1">
+          <mxGeometry height="43.5" width="43.5" x="35.75" y="236.5" as="geometry" />
+        </mxCell>
+        <mxCell id="7iR1sR7JQRNpvm5EplKq-17" parent="1" style="sketch=0;outlineConnect=0;fontColor=#232F3E;gradientColor=none;fillColor=#FBFBFF;strokeColor=none;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;pointerEvents=1;shape=mxgraph.aws4.user;" value="" vertex="1">
+          <mxGeometry height="43.5" width="43.5" x="35.75" y="286.5" as="geometry" />
+        </mxCell>
+        <mxCell id="7iR1sR7JQRNpvm5EplKq-20" parent="1" style="shadow=1;strokeWidth=1;rounded=1;absoluteArcSize=1;arcSize=2;" value="" vertex="1">
+          <mxGeometry height="44" width="137.5" x="117.5" y="192.5" as="geometry" />
+        </mxCell>
+        <mxCell id="7iR1sR7JQRNpvm5EplKq-21" parent="7iR1sR7JQRNpvm5EplKq-20" style="sketch=0;dashed=0;connectable=0;html=1;fillColor=#757575;strokeColor=none;shape=mxgraph.gcp2.frontend_platform_services;part=1;labelPosition=right;verticalLabelPosition=middle;align=left;verticalAlign=middle;spacingLeft=5;fontSize=12;" value="Frontend&#xa;Platform Services" vertex="1">
+          <mxGeometry height="32" relative="1" width="32" y="0.5" as="geometry">
+            <mxPoint x="5" y="-16" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="7iR1sR7JQRNpvm5EplKq-24" edge="1" parent="1" source="frontend_box" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.383;entryDx=0;entryDy=0;entryPerimeter=0;" target="gateway_box">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="7iR1sR7JQRNpvm5EplKq-25" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="HTTPS" vertex="1">
+          <mxGeometry height="30" width="60" x="255" y="286.5" as="geometry" />
+        </mxCell>
+        <mxCell id="7iR1sR7JQRNpvm5EplKq-26" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Rest API&lt;div&gt;JSON&lt;/div&gt;" vertex="1">
+          <mxGeometry height="30" width="60" x="255" y="320" as="geometry" />
+        </mxCell>
+        <mxCell id="7iR1sR7JQRNpvm5EplKq-28" parent="1" style="image;aspect=fixed;html=1;points=[];align=center;fontSize=12;image=img/lib/azure2/security/Multifactor_Authentication.svg;" value="" vertex="1">
+          <mxGeometry height="42.22" width="34.4" x="87.5" y="617.78" as="geometry" />
+        </mxCell>
+        <mxCell id="FEycsupnrdPfHTAKXsbf-1" edge="1" parent="1" source="auth_ctrl" style="endArrow=classic;startArrow=classic;html=1;strokeColor=#ffffff;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;fontSize=9;" value="Read / Write">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="549.47" y="200" as="sourcePoint" />
+            <mxPoint x="549.47" y="110" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FEycsupnrdPfHTAKXsbf-2" edge="1" parent="1" source="dash_ctrl" style="endArrow=classic;startArrow=classic;html=1;strokeColor=#ffffff;exitX=0.455;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;fontSize=9;exitPerimeter=0;" value="Read / Write">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="679.47" y="200" as="sourcePoint" />
+            <mxPoint x="679.47" y="110" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
